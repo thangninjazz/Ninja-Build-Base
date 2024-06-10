@@ -1,0 +1,12 @@
+# src/logger/BUILD.gn
+
+static_library("logger") {
+  sources = [
+    "Logger.cc",
+    "ConsoleLogger.cc",
+    "FileLogger.cc",
+    "LoggerFactory.cc",
+  ]
+  public_deps = []
+  public_include_dirs = [ "." ]
+}

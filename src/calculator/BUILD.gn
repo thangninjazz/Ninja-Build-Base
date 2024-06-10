@@ -1,0 +1,10 @@
+# src/calculator/BUILD.gn
+
+static_library("calculator") {
+  sources = [
+    "Calculator.cc",
+    "BinaryCalculator.cc",
+  ]
+  public_deps = []
+  public_include_dirs = [ "." ]
+}

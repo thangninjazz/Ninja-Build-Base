@@ -1,0 +1,15 @@
+# BUILD.gn
+
+group("all") {
+  deps = [
+    "//src:main_app",
+  ]
+}
+
+executable("main_app") {
+  sources = [ "src/main.cc" ]
+  deps = [
+    "//src/logger:logger",
+    "//src/calculator:calculator",
+  ]
+}
